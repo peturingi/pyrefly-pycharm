@@ -1,0 +1,67 @@
+<idea-plugin>
+    <id>dk.ingi.pyreflypycharm</id>
+    <name>pyrefly-pycharm</name>
+    <vendor url="https://github.com/peturingi/pyrefly-pycharm">INGI Consulting ApS</vendor>
+
+    <description><![CDATA[
+    <p>Runs <a href="https://pyrefly.org">Pyrefly</a>, Meta's fast Python type checker, as a language server in PyCharm,
+    via <a href="https://github.com/redhat-developer/lsp4ij">LSP4IJ</a>.</p>
+    <ul>
+      <li>Pyrefly type errors and warnings in the editor and in <i>Inspect Code</i></li>
+      <li>Pyrefly hover types, inlay hints and quick fixes</li>
+      <li>Uses the <code>pyrefly</code> from your project's interpreter, so editor and CLI agree</li>
+      <li>Optionally turns off PyCharm's own type inspections so only Pyrefly reports type errors</li>
+    </ul>
+    <p>Pyrefly is never called while PyCharm holds its read/write lock: all requests are asynchronous.</p>
+    <p>Not affiliated with Meta or JetBrains.</p>
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.python</depends>
+    <depends>com.redhat.devtools.lsp4ij</depends>
+
+    <extensions defaultExtensionNs="com.redhat.devtools.lsp4ij">
+        <server id="pyrefly-pycharm"
+                name="Pyrefly (pyrefly-pycharm)"
+                factoryClass="dk.ingi.pyreflypycharm.server.PyreflyPyCharmServerFactory">
+            <description><![CDATA[Pyrefly language server, started by the pyrefly-pycharm plugin.]]></description>
+        </server>
+        <languageMapping language="Python" serverId="pyrefly-pycharm" languageId="python"/>
+    </extensions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <projectConfigurable parentId="tools"
+                             id="dk.ingi.pyreflypycharm.settings"
+                             displayName="Pyrefly"
+                             instance="dk.ingi.pyreflypycharm.settings.PyreflyPyCharmConfigurable"/>
+        <notificationGroup id="pyrefly-pycharm" displayType="BALLOON"/>
+        <localInspection language="Python"
+                         shortName="PyreflyPyCharm"
+                         id="PyreflyPyCharm"
+                         displayName="Pyrefly"
+                         groupName="Pyrefly"
+                         enabledByDefault="true"
+                         level="ERROR"
+                         implementationClass="dk.ingi.pyreflypycharm.inspection.PyreflyInspection"/>
+    </extensions>
+
+    <projectListeners>
+        <listener class="dk.ingi.pyreflypycharm.server.PyreflyPyCharmRootsListener"
+                  topic="com.intellij.openapi.roots.ModuleRootListener"/>
+    </projectListeners>
+
+    <actions>
+        <group id="PyreflyPyCharm.Menu" text="Pyrefly" popup="true">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+            <action id="PyreflyPyCharm.Restart" class="dk.ingi.pyreflypycharm.actions.RestartPyreflyAction"
+                    text="Restart Pyrefly"/>
+            <separator/>
+            <action id="PyreflyPyCharm.DisablePyCharmTypeInspections"
+                    class="dk.ingi.pyreflypycharm.actions.DisablePyCharmTypeInspectionsAction"
+                    text="Turn Off PyCharm's Type Inspections"/>
+            <action id="PyreflyPyCharm.EnablePyCharmTypeInspections"
+                    class="dk.ingi.pyreflypycharm.actions.EnablePyCharmTypeInspectionsAction"
+                    text="Turn On PyCharm's Type Inspections"/>
+        </group>
+    </actions>
+</idea-plugin>

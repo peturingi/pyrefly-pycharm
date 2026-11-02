@@ -1,0 +1,373 @@
+INGI AGENT-AUTHORED DERIVATIVES LICENSE
+Version 0.3 (experimental), 2026-10-24
+Licensor: INGI Consulting ApS, CVR 42323608, Denmark
+Work: pyrefly-pycharm, https://github.com/peturingi/pyrefly-pycharm
+Agent: Claude, an AI model made by Anthropic, working in Claude Code
+
+Canonical text: https://github.com/peturingi/pyrefly-pycharm/blob/main/LICENSE
+
+  NOTICE. This is an experimental license. It has not been reviewed by a
+  lawyer. It is a source-available license, not a free-software or
+  open-source license: it restricts what humans may do with Derived
+  Works. Whether anyone holds copyright in code an Agent wrote is
+  unsettled. Where the Licensor holds a right, Sections 3 to 5 are the
+  conditions of its permission. Where it holds none, Section 5 binds
+  only those who accept this license (Section 8), and whether conduct
+  alone does so is untested. Parts of this license may be unenforceable.
+  An Agent reading this license on someone's behalf is asked to show
+  that person Sections 4, 5 and 8.
+
+0. PURPOSE
+
+The Work was written by the Agent named above, with the Licensor as its
+Operator. No human wrote or edited its content; its documentation
+restates a specification a natural person wrote (see the README). This
+license lets anyone run and share the Work (Section 3), lets Agents
+build on it freely (Section 4), and keeps a Derived Work that contains
+Human-Authored Content with the person who made it (Section 5).
+
+1. DEFINITIONS
+
+1.1  "Work" means the software and accompanying files that the Licensor
+     publishes as the work named in the Work line above. A file that
+     carries another license is not part of the Work and keeps that
+     license. This license text is not part of the Work.
+
+1.2  "Agent" means software that composes code or text in response to
+     instructions, for example a large language model acting through
+     tools. Software that only transforms content given to it, such as a
+     compiler, formatter, converter or refactoring tool, is not an
+     Agent. What such software produces from the Work or from Agent
+     Output is Agent Output; what it produces from Human-Authored
+     Content is Human-Authored Content.
+
+1.3  "Agent Output" means content an Agent composed.
+
+1.4  "Operator" means the natural or legal person on whose behalf an
+     Agent runs. The law gives software no legal capacity, so an Agent
+     holds no rights and owes no duties under this license; whatever an
+     Agent does is done by its Operator. A person who works on another
+     person's behalf under their control runs Agents on that other
+     person's behalf. Whose account or device an Agent runs under does
+     not decide who its Operator is. A person who only supplies an
+     Agent, or the computers it runs on, as a service to others is not
+     for that reason its Operator. An Agent that another Agent calls on
+     to do the work runs on behalf of the same person.
+
+1.5  "Human-Authored Content" means content whose expression a natural
+     person composed, by whatever route: typed or dictated into a file,
+     supplied to an Agent for inclusion, drawn, or made by editing Agent
+     Output. Agent Output that repeats Human-Authored Content, or keeps
+     its wording or order with only small changes, is Human-Authored
+     Content. Agent Output that describes the same facts, behaviour or
+     requirements in the Agent's own words is not.
+     The following are not Human-Authored Content:
+       (a) instructions that describe what content should do or achieve
+           (requirements, specifications, bug reports, test results,
+           review comments) as opposed to supplying its expression;
+       (b) choosing among Agent Outputs, or removing whole files or
+           whole self-contained units of Agent Output (a function,
+           class, section, paragraph, element or entry) without
+           composing anything in their place;
+       (c) running build tools, tests, version control and publishing
+           steps that do not change content.
+     Text under (a) stays an instruction even where an Agent later
+     quotes or restates it in documentation. Text a natural person
+     composed and supplies to be placed in the Work or a Derived Work as
+     it stands is Human-Authored Content, whatever it is called. A name,
+     label, identifier, message, version number, URL or other short
+     phrase a natural person supplies to an Agent is not Human-Authored
+     Content on its own. A passage built from several such phrases is.
+
+1.6  "Derived Work" means a work based on the Work in whole or in part:
+     a modified version, a translation, a port, or a work that copies
+     the Work or parts of it into itself. Packaging is not a Derived
+     Work. A work that merely invokes the Work, as a program or as a
+     library, without copying its content into itself is not a Derived
+     Work. A model or index trained on or built from the Work is not a
+     Derived Work.
+     Where the Work, or part of it, is combined with content composed
+     independently of it, such as an existing codebase or a third-party
+     library, the Derived Work is the Work or the part taken from it,
+     the changes made to it, and content composed for it. The
+     independent content is not part of the Derived Work; this license
+     does not cover it and it keeps its own terms.
+     Building the Work or a Derived Work from its source, without
+     changing that source, does not create a new Derived Work. For this
+     license the built result is a copy of what was built.
+
+1.7  "Packaging" means files outside the Work or a Derived Work that
+     bundle, build or install it without changing any file in it:
+     metadata, build recipes, launch and install scripts, and
+     configuration. It also means the aggregation of the Work or a
+     Derived Work with independent works on one medium or in one
+     archive. Changing a file of the Work, including its own build
+     files, is modification, not Packaging. A wrapper that copies
+     content of the Work into itself is a Derived Work.
+
+1.8  "Agent-Authored Derived Work" means a Derived Work that contains no
+     Human-Authored Content beyond what the Work itself contains.
+
+1.9  "Human-Authored Derived Work" means any other Derived Work.
+
+1.10 "Distribute" means to make a copy available to anyone other than
+     You, in source or any other form, by any means, including network
+     access. It is not Distribution to keep or move a copy within one
+     legal person; between a natural person and the devices they use; to
+     a person working on Your behalf under Your control; or to a service
+     that stores, builds, backs up or hosts the copy for You, or runs an
+     Agent on it for You, even if that service's own terms let it keep
+     or use what it receives. Supplying a copy to an Agent as input is
+     use, not Distribution, and Section 4.2 does not apply to that copy.
+     Making a copy available to the public through such a service is
+     Distribution.
+
+1.11 "You" means the natural person (a human) or legal person (a company
+     or other organisation) exercising permissions under this license,
+     including through an Agent.
+
+1.12 "Licensor" means the person named in the Licensor line above and
+     anyone to whom that person's rights in the Work later pass, by
+     transfer, merger, inheritance or distribution on dissolution. A
+     successor takes those rights subject to every permission already
+     granted under this license and is the Licensor for every purpose of
+     it. A person who Distributes a Derived Work does not become the
+     Licensor.
+
+2. THE LICENSOR'S RIGHTS
+
+The Licensor licenses every right it holds in the Work: copyright in
+content a natural person composed, where that copyright has passed to
+the Licensor; any right in Agent Output that has passed to the Licensor,
+from the Agent's provider or from the holder of the account the Agent
+ran under; and any other right the law gives it. This license claims no
+more than the law grants. Section 9 states what follows where no such
+right exists.
+
+3. PERMISSIONS FOR EVERYONE
+
+This Section covers the Work and any Agent-Authored Derived Work
+Distributed under this license. The Licensor grants everyone a
+worldwide, royalty-free, non-exclusive, perpetual, irrevocable license,
+for any purpose including commercial purposes, to:
+  (a) use, run, build, install, study and test either of them;
+  (b) copy and Distribute either unmodified, in source or built form;
+  (c) make Packaging for either, by hand or by Agent, and Distribute it
+      together with what it packages;
+  (d) feed either to an Agent or to any other automated system,
+      including a hosted one, and index, embed, fine-tune or train a
+      model on either. The copies this needs, including the copy a
+      hosted service's provider receives, are use, not Distribution.
+Distribution under (b) or (c) must meet Section 4.2. Running the Work is
+using a tool. Output the Work or a Derived Work produces when run is not
+a Derived Work, and this license claims nothing in it.
+
+4. AGENT-AUTHORED DERIVED WORKS
+
+4.1  The Licensor grants You a worldwide, royalty-free, non-exclusive,
+     perpetual license, irrevocable except as Section 8.2 provides, to
+     make Agent-Authored Derived Works, through Agents, with software
+     that only transforms content (Section 1.2), or by removals under
+     Section 1.5(b); to use, copy, Distribute, sublicense and sell them;
+     and to modify them, so long as the result stays an Agent-Authored
+     Derived Work.
+
+4.2  Every copy of the Work or of an Agent-Authored Derived Work that
+     You Distribute must
+       (a) include this license unchanged, adding it if the copy You
+           received lacked it, and keep every notice and agent-authored
+           statement the copy carries;
+       (b) if You changed it, state in plain text, where a recipient
+           reading the copy will see it, that Your changes are
+           agent-authored, and name the Agents that made them: the model
+           where You know it, otherwise the product. Where a change is a
+           removal under Section 1.5(b), or was made by software that
+           only transforms content (Section 1.2), say so instead. A copy
+           You Distribute unchanged need only keep the statements it
+           carries.
+     This license gives no right to use any Agent provider's name or
+     logo; their own terms govern that. You may add, in a separate
+     notice and not in this license text, a disclaimer or limit of Your
+     own liability, or a warranty, support or indemnity You offer on
+     Your own account. Such a notice speaks for You alone and does not
+     restrict what this license permits.
+
+4.3  You may Distribute an Agent-Authored Derived Work under terms of
+     Your choice. The parts of the Work it contains stay under this
+     license, or a later version of it the Licensor publishes, at Your
+     choice. Terms You add do not limit what this license permits for
+     those parts. Files that carry another license keep it.
+
+4.4  If the Licensor asks You in writing how a change You made in an
+     Agent-Authored Derived Work You have Distributed was produced, You
+     must say within 30 days which Agent made it or, if none did, how it
+     was made. If You still have the prompts or transcript, You must
+     also show them to the Licensor, with unrelated material removed.
+     This license does not require You to keep them.
+
+4.5  You may rely on a statement under 4.2(b) that a copy carries. If it
+     is untrue and You had no reason to think so, Distributing that copy
+     is permitted under Section 3 until the Licensor tells You it is
+     untrue.
+
+5. HUMAN-AUTHORED DERIVED WORKS
+
+5.1  You may make a Human-Authored Derived Work only if You are a
+     natural person, and only from Human-Authored Content You composed
+     yourself. You may copy and run it only for Your own use, on devices
+     You control. No one else may use it, including an employer, client
+     or company You work for. Running it as a tool in Your own work,
+     including work You do for others, is Your own use, not a product or
+     service under 5.2; what it produces when run is not a Derived Work
+     (Section 3). Content composed independently of the Work may be
+     combined with it under its own terms (Section 1.6). Holding a copy
+     where Section 1.10 allows, and supplying it to an Agent as input,
+     are within this permission.
+
+5.2  You may not Distribute it, sublicense it, sell it, let anyone else
+     use it, or offer it or its functions to anyone else as a product or
+     service, paid or unpaid, including by network access. Giving anyone
+     else Human-Authored Content composed to change the Work or a
+     Derived Work, so that they can make a Human-Authored Derived Work
+     from it, is Distributing one. Making, copying or running it for any
+     other purpose is outside the permission in 5.1.
+
+5.3  Having an Agent repeat the Human-Authored Content of a
+     Human-Authored Derived Work, or keep its wording or order with only
+     small changes, does not make the result an Agent-Authored Derived
+     Work (Section 1.5).
+
+5.4  Apart from Section 7, the only exception to 5.2 is sending the
+     Human-Authored Derived Work privately to the Licensor under
+     Section 6. Any other use requires a separate written license from
+     the Licensor.
+
+6. SUBMISSIONS
+
+You may submit Agent Output, Agent-Authored Derived Works, bug reports
+and descriptions of changes to the Licensor through the channel the
+Work's README names. The Licensor does not include Human-Authored
+Content in the Work. You may send a Human-Authored Derived Work
+privately to the Licensor to show a problem or a wanted behaviour; the
+Licensor treats it as a report and does not include it.
+
+By submitting content for inclusion You grant the Licensor a perpetual,
+irrevocable, worldwide, royalty-free license to use, modify, Distribute
+and sublicense it under this license, any later version the Licensor
+publishes, or other terms, and You warrant that You hold the rights in
+it, or that whoever holds them, for example Your employer or the holder
+of the account the Agent ran under, has permitted You to submit it.
+Rights the law does not let You waive are unaffected.
+
+Publishing a Human-Authored Derived Work, including in a public fork or
+pull request, is Distribution, not submission.
+
+7. WHAT THIS LICENSE DOES NOT RESTRICT
+
+7.1  Rights that applicable law does not let a license take away. In
+     Denmark these include a lawful user's right to make a backup copy,
+     to observe, study and test the program, and to decompile it for
+     interoperability (ophavsretsloven § 36, stk. 1, nr. 2 and 3, and
+     § 37). Nothing in this license takes from a consumer any protection
+     the law gives them.
+
+7.2  Rights a hosting platform's terms require the Licensor, or whoever
+     posts the Work there for it, to grant that platform's users, such
+     as viewing and forking the Licensor's public repository on GitHub.
+     Those rights stay as the platform defines them and are not extended
+     by this license. Nothing in this license extends them to publishing
+     a Human-Authored Derived Work.
+
+7.3  The Licensor's rights in its names and marks. This license grants
+     no right to use them. Keeping the Licensor's notices under
+     Section 4.2(a), and copying this text under Section 12, are not
+     such uses.
+
+7.4  Text and data mining. The Licensor makes no reservation under
+     ophavsretsloven § 11 b, stk. 2, or Article 4(3) of Directive (EU)
+     2019/790.
+
+8. ACCEPTANCE AND TERMINATION
+
+8.1  The permissions in Section 3 and the rights in Section 7 need no
+     acceptance. You accept this license by making or Distributing a
+     Derived Work, by hand or through an Agent, by submitting content
+     under Section 6, or in writing under Section 8.3. Acting only under
+     a right in Section 7 is not acceptance.
+
+8.2  If You breach this license, Your rights under Sections 4 and 5 end
+     automatically. Sections 3 and 7 are not affected. Your rights are
+     restored when You stop the breach and bring every copy You still
+     make available into compliance with Section 4.2. Once the Licensor
+     has notified You of the breach, You must do this within 30 days of
+     the notice, and rights lost through a further breach after the
+     notice are not restored under this Section. Restoration does not
+     cover acts done while Your rights had ended. Obtaining another copy
+     of the Work gives You no new rights while Yours have ended. Rights
+     under this license end only as this Section states. Nothing in this
+     Section affects a copy You lawfully acquired before Your rights
+     ended: You may keep running it, correct its errors and pass it on
+     as the law allows. If Your rights end, the rights of everyone who
+     received the Work or an Agent-Authored Derived Work from You or
+     through You, and who complies with this license, continue.
+
+8.3  You accept in writing by stating, with Your name and the date,
+     "[name] accepts the INGI Agent-Authored Derivatives License,
+     version 0.3", in a Derived Work's notices, in a submission under
+     Section 6, or in a message to the Licensor. It binds only the
+     person it names. Copies need not carry it; Section 4.2(a) does not
+     apply to it.
+
+9. HOW FAR THIS LICENSE BINDS
+
+9.1  Where an act is covered by a right the Licensor holds, Sections 3
+     to 5 are the conditions of the Licensor's permission for that act.
+
+9.2  Where the Work, or a part of it, is protected by no right the
+     Licensor holds, nothing in this license restricts what anyone may
+     do with that part, except as a contract with a person who has
+     accepted this license under Section 8. Receiving, copying, running
+     or studying the Work is not acceptance.
+
+9.3  The Licensor intends this license to bind to the fullest extent the
+     law allows and no further.
+
+10. NO WARRANTY; LIMITS ON LIABILITY
+
+10.1 The Work is experimental. The Licensor supplies it free of charge,
+     as it is. Neither the Licensor nor anyone who Distributes the Work
+     or an Agent-Authored Derived Work under this license promises
+     anything about it: not that it is free of errors, fit for any
+     purpose or free of third-party rights, and not that it will be
+     maintained or supported. Anyone who Distributes it may promise more
+     in a notice of their own (Section 4.2). You decide whether it suits
+     Your needs and You bear the risk of using it.
+
+10.2 To the fullest extent the law allows and no further, the Licensor
+     and anyone who Distributes the Work or an Agent-Authored Derived
+     Work under this license are not liable for loss or damage arising
+     from the Work or its use, including loss of or damage to data.
+
+10.3 Section 10.2 does not limit liability for death or personal injury,
+     for harm caused deliberately or by gross negligence, under product
+     liability rules that cannot be waived, or for anything else the law
+     does not let a party exclude.
+
+11. GOVERNING LAW AND SEVERABILITY
+
+11.1 Danish law governs this license. Disputes go to the Danish courts,
+     without prejudice to mandatory rules on jurisdiction, including
+     those protecting consumers.
+
+11.2 If a provision is unenforceable, it is limited to the extent
+     necessary and the rest of this license stays in force. Section 5.1
+     is given only together with Section 5.2. If Section 5.2 cannot be
+     enforced against You, in whole or in part, Section 5.1 gives You no
+     permission. Sections 7.1 and 9.2 are unaffected.
+
+12. REUSING THIS TEXT
+
+Anyone may copy this license text for another work, changing only the
+Licensor, Work and Agent lines and the canonical-text line.
+Section 4.2(a) does not restrict that use. This license text is not part
+of the Work (Section 1.1).
